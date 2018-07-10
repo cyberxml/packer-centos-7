@@ -2,7 +2,9 @@
 - hosts: all
   become: yes
   gather_facts: yes
-
+  environment:
+    http_proxy: http://proxy-ics.external.lmco.com:80
+    https_proxy: http://proxy-ics.external.lmco.com:80
   roles:
-    - geerlingguy.nfs
-    - geerlingguy.packer-rhel
+    - nephelaiio.nfs
+    - ehime.packer-rhel

@@ -1,0 +1,2 @@
+/usr/local/bin/packer build -on-error=ask -var 'version=1804.5212' centos7-proxy.json
+
